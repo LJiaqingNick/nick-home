@@ -12,7 +12,6 @@
   "keywords": [],
   "author": "Jiaqing(Nick) Liu",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
