@@ -5,11 +5,13 @@ import {
   Image,
   useColorModeValue,
   Button,
+  Link,
 } from '@chakra-ui/react';
 import Section from '@/components/section';
 import Paragraph from '@/components/paragraph';
 import NextLink from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import { BioSection, BioYear } from '@/components/bio';
 
 const Page = () => {
   return (
@@ -53,15 +55,14 @@ const Page = () => {
           About Nick
         </Heading>
         <Paragraph>
-          Nick is a versatile full-stack developer and data Scientist
-          with a Master’s in Computer Science from Northeastern University,
-          Vancouver. Skilled in website development, he has
-          led data management and software projects, improving efficiencies and
-          user experiences. Beyond his professional pursuits, Nick is passionate
-          about bodybuilding and reading, demonstrating his commitment to
-          continuous personal and physical growth. His work ethic and innovative
-          approach to challenges reflect a dedication to excellence in every
-          facet of his life.
+          Nick is a versatile full-stack developer and data Scientist with a
+          Master&apos;s in Computer Science from Northeastern University, Vancouver.
+          Skilled in website development, he has led data management and
+          software projects, improving efficiencies and user experiences. Beyond
+          his professional pursuits, Nick is passionate about bodybuilding and
+          reading, demonstrating his commitment to continuous personal and
+          physical growth. His work ethic and innovative approach to challenges
+          reflect a dedication to excellence in every facet of his life.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
@@ -70,6 +71,36 @@ const Page = () => {
             </Button>
           </NextLink>
         </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title" >
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1992</BioYear>
+          Born in China.
+        </BioSection>
+        <BioSection>
+          <BioYear>2015</BioYear>
+          Completed a Bachelor's degree in Business Finance at Washington State University in the United States.
+        </BioSection>
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Completed a Master&apos;s degree in Computer Science at Northeastern University in the Canada.
+        </BioSection>
+        <BioSection>
+          <BioYear>2023 to present</BioYear>
+          Working at {' '}
+          <Link href="https://glocalfoundation.ca/">Glocal Foundation Of Canada</Link>
+        </BioSection>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title" >
+          I ♥
+        </Heading>
+        <Paragraph>
+          Solving Puzzle, Reading, Bodybuilding, Traveling, Music.
+        </Paragraph>
       </Section>
     </Container>
   );
