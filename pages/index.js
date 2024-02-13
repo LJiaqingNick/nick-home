@@ -56,24 +56,25 @@ const Page = () => {
         </Heading>
         <Paragraph>
           Nick is a versatile full-stack developer and data Scientist with a
-          Master&apos;s in Computer Science from Northeastern University, Vancouver.
-          Skilled in website development, he has led data management and
-          software projects, improving efficiencies and user experiences. Beyond
-          his professional pursuits, Nick is passionate about bodybuilding and
-          reading, demonstrating his commitment to continuous personal and
-          physical growth. His work ethic and innovative approach to challenges
-          reflect a dedication to excellence in every facet of his life.
+          Master&apos;s in Computer Science from Northeastern University,
+          Vancouver. Skilled in website development, he has led data management
+          and software projects, improving efficiencies and user experiences.
+          Beyond his professional pursuits, Nick is passionate about
+          bodybuilding and reading, demonstrating his commitment to continuous
+          personal and physical growth. His work ethic and innovative approach
+          to challenges reflect a dedication to excellence in every facet of his
+          life.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="orange">
               My porfolio
             </Button>
           </NextLink>
         </Box>
       </Section>
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title" >
+        <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <BioSection>
@@ -82,20 +83,24 @@ const Page = () => {
         </BioSection>
         <BioSection>
           <BioYear>2015</BioYear>
-          Completed a Bachelor's degree in Business Finance at Washington State University in the United States.
+          Completed a Bachelor's degree in Business Finance at Washington State
+          University in the United States.
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          Completed a Master&apos;s degree in Computer Science at Northeastern University in the Canada.
+          Completed a Master&apos;s degree in Computer Science at Northeastern
+          University in the Canada.
         </BioSection>
         <BioSection>
           <BioYear>2023 to present</BioYear>
-          Working at {' '}
-          <Link href="https://glocalfoundation.ca/">Glocal Foundation Of Canada</Link>
+          Working at{' '}
+          <Link href="https://glocalfoundation.ca/">
+            Glocal Foundation Of Canada
+          </Link>
         </BioSection>
       </Section>
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title" >
+        <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
         <Paragraph>
