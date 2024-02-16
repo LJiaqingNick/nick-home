@@ -6,6 +6,8 @@ import {
   useColorModeValue,
   Button,
   Link,
+  List,
+  ListItem,
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
@@ -13,6 +15,11 @@ import Layout from '@/components/layouts/article';
 import Section from '@/components/section';
 import Paragraph from '@/components/paragraph';
 import { BioSection, BioYear } from '@/components/bio';
+import {
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoInstagram,
+} from 'react-icons/io5';
 
 const Page = () => {
   return (
@@ -108,6 +115,34 @@ const Page = () => {
           <Paragraph>
             Solving Puzzle, Reading, Bodybuilding, Traveling, Music.
           </Paragraph>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Contact Me
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/LJiaqingNick" target='_blank'>
+                <Button variant="ghost" colorScheme="orange" leftIcon={<IoLogoGithub />}>
+                  @LJiaqingNick
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/jiaqing-liu/" target='_blank'>
+                <Button variant="ghost" colorScheme="orange" leftIcon={<IoLogoLinkedin />}>
+                  @LJiaqingNick
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.instagram.com/nickliu9671/" target='_blank'>
+                <Button variant="ghost" colorScheme="orange" leftIcon={<IoLogoInstagram />}>
+                  @LJiaqingNick
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>

@@ -17,8 +17,9 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './teme-toggle-button';
+import { IoLogoGithub } from 'react-icons/io5';
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, children, ...props }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900');
 
@@ -29,6 +30,7 @@ const LinkItem = ({ href, path, children }) => {
       p={2}
       bg={active ? 'orange' : undefined}
       color={active ? '#202023' : inactiveColor}
+      {...props}
     >
       {children}
     </Link>
@@ -72,11 +74,23 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
+          {/* <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
           <LinkItem href="/posts" path={path}>
             Posts
+          </LinkItem> */}
+          <LinkItem
+            target="_blank"
+            href="https://github.com/LJiaqingNick/nick-home"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
@@ -93,11 +107,17 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
+                {/* <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/posts">
                   Posts
+                </MenuItem> */}
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/LJiaqingNick/nick-home"
+                >
+                Source
                 </MenuItem>
               </MenuList>
             </Menu>
