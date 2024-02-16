@@ -15,11 +15,7 @@ import Layout from '@/components/layouts/article';
 import Section from '@/components/section';
 import Paragraph from '@/components/paragraph';
 import { BioSection, BioYear } from '@/components/bio';
-import {
-  IoLogoGithub,
-  IoLogoLinkedin,
-  IoLogoInstagram,
-} from 'react-icons/io5';
+import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
 
 const Page = () => {
   return (
@@ -32,7 +28,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello, I'm a full-stack developer based in Vancouver.
+          Hello, I&apos;m a full-stack developer based in Vancouver.
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -92,7 +88,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2015</BioYear>
-            Completed a Bachelor's degree in Business Finance at Washington
+            Completed a Bachelor&apos;s degree in Business Finance at Washington
             State University in the United States.
           </BioSection>
           <BioSection>
@@ -122,22 +118,40 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/LJiaqingNick" target='_blank'>
-                <Button variant="ghost" colorScheme="orange" leftIcon={<IoLogoGithub />}>
+              <Link href="https://github.com/LJiaqingNick" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="orange"
+                  leftIcon={<IoLogoGithub />}
+                >
                   @LJiaqingNick
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://www.linkedin.com/in/jiaqing-liu/" target='_blank'>
-                <Button variant="ghost" colorScheme="orange" leftIcon={<IoLogoLinkedin />}>
+              <Link
+                href="https://www.linkedin.com/in/jiaqing-liu/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="orange"
+                  leftIcon={<IoLogoLinkedin />}
+                >
                   @LJiaqingNick
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://www.instagram.com/nickliu9671/" target='_blank'>
-                <Button variant="ghost" colorScheme="orange" leftIcon={<IoLogoInstagram />}>
+              <Link
+                href="https://www.instagram.com/nickliu9671/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="orange"
+                  leftIcon={<IoLogoInstagram />}
+                >
                   @LJiaqingNick
                 </Button>
               </Link>

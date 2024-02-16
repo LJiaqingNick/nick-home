@@ -1,4 +1,4 @@
-import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
+import { Container,  Heading, SimpleGrid } from '@chakra-ui/react';
 import Section from '@/components/section';
 import { WorkGridItem } from '@/components/grid-item';
 import thumbEchoic from '@/public/images/echoic_banner1.jpg';
