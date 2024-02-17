@@ -9,8 +9,8 @@ import {
   List,
   ListItem,
 } from '@chakra-ui/react';
-import { ChevronRightIcon } from '@chakra-ui/icons';
-import NextLink from 'next/link';
+// import { ChevronRightIcon } from '@chakra-ui/icons';
+// import NextLink from 'next/link';
 import Layout from '@/components/layouts/article';
 import Section from '@/components/section';
 import Paragraph from '@/components/paragraph';
