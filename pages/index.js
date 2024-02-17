@@ -70,13 +70,13 @@ const Page = () => {
             innovative approach to challenges reflect a dedication to excellence
             in every facet of his life.
           </Paragraph>
-          <Box align="center" my={4}>
+          {/* <Box align="center" my={4}>
             <NextLink href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="orange">
                 My porfolio
               </Button>
             </NextLink>
-          </Box>
+          </Box> */}
         </Section>
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
