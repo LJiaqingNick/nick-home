@@ -15,7 +15,7 @@ import Layout from '@/components/layouts/article';
 import Section from '@/components/section';
 import Paragraph from '@/components/paragraph';
 import { BioSection, BioYear } from '@/components/bio';
-import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
+import { IoLogoGithub, IoLogoLinkedin, IoMailOutline } from 'react-icons/io5';
 
 const Page = () => {
   return (
@@ -28,14 +28,14 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello, I&apos;m a full-stack developer based in Vancouver.
+          Hello, I&apos;m a web developer based in Richmond, BC.
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Nick Liu
+              Jiaqing (Nick) Liu
             </Heading>
-            <p> Fullstack Developer / Data Scientist / Athletic / Reader </p>
+            <p> Full-Stack Web Developer </p>
           </Box>
           <Box
             flexShrink={0}
@@ -57,18 +57,16 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            About Nick
+            About
           </Heading>
           <Paragraph>
-            Nick is a versatile full-stack developer and data Scientist with a
-            Master&apos;s in Computer Science from Northeastern University,
-            Vancouver. Skilled in website development, he has led data
-            management and software projects, improving efficiencies and user
-            experiences. Beyond his professional pursuits, Nick is passionate
-            about bodybuilding and reading, demonstrating his commitment to
-            continuous personal and physical growth. His work ethic and
-            innovative approach to challenges reflect a dedication to excellence
-            in every facet of his life.
+            Jiaqing (Nick) is a full-stack web developer with a Master&apos;s in
+            Computer Science from Northeastern University (Vancouver campus).
+            He builds responsive, user-centered web experiences with React,
+            Next.js, and TailwindCSS, and supports data workflows with Python
+            automation and MongoDB. Recent work includes designing the Cozap
+            company website and delivering data collection and visualization
+            tools at GLOCAL Foundation of Canada.
           </Paragraph>
           {/* <Box align="center" my={4}>
             <NextLink href="/works">
@@ -87,30 +85,52 @@ const Page = () => {
             Born in China.
           </BioSection>
           <BioSection>
-            <BioYear>2015</BioYear>
-            Completed a Bachelor&apos;s degree in Business Finance at Washington
-            State University in the United States.
+            <BioYear>2023</BioYear>
+            M.S. in Computer Science, Northeastern University (Vancouver
+            campus).
           </BioSection>
           <BioSection>
             <BioYear>2023</BioYear>
-            Completed a Master&apos;s degree in Computer Science at Northeastern
-            University in the Canada.
-          </BioSection>
-          <BioSection>
-            <BioYear>2023 to present</BioYear>
-            Working at{' '}
-            <Link href="https://glocalfoundation.ca/">
+            Web Developer &amp; Data Management at{' '}
+            <Link href="https://glocalfoundation.ca/" target="_blank" rel="noopener noreferrer">
               Glocal Foundation Of Canada
             </Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>2024</BioYear>
+            Web Developer at{' '}
+            <Link href="https://cozap.ca/" target="_blank" rel="noopener noreferrer">
+              Cozap Staging
+            </Link>
+            .
           </BioSection>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥
+            Technical Skills
           </Heading>
-          <Paragraph>
-            Solving Puzzle, Reading, Bodybuilding, Traveling, Music.
-          </Paragraph>
+          <List spacing={2}>
+            <ListItem>
+              <Box as="span" fontWeight="bold">
+                Languages:
+              </Box>{' '}
+              Python, Java, C, C++, JavaScript, TypeScript, HTML, CSS
+            </ListItem>
+            <ListItem>
+              <Box as="span" fontWeight="bold">
+                AWS:
+              </Box>{' '}
+              RDS, EC2, Lambda, SQS, Load Balancer
+            </ListItem>
+            <ListItem>
+              <Box as="span" fontWeight="bold">
+                Tools &amp; Frameworks:
+              </Box>{' '}
+              React, Next.js, TailwindCSS, Git, Scrum, PostgreSQL, Pandas,
+              NumPy, Linux Administration, Message Queue, Prism, MVC,
+              Microservices
+            </ListItem>
+          </List>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
@@ -143,16 +163,13 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link
-                href="https://www.instagram.com/nickliu9671/"
-                target="_blank"
-              >
+              <Link href="mailto:jiaqingliu1992@gmail.com">
                 <Button
                   variant="ghost"
                   colorScheme="orange"
-                  leftIcon={<IoLogoInstagram />}
+                  leftIcon={<IoMailOutline />}
                 >
-                  @LJiaqingNick
+                  jiaqingliu1992@gmail.com
                 </Button>
               </Link>
             </ListItem>
